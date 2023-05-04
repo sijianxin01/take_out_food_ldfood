@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- 主机： 127.0.0.1
--- 生成日期： 2022-06-25 03:01:12
+-- 生成日期： 2023-05-04 10:44:14
 -- 服务器版本： 10.4.24-MariaDB
 -- PHP 版本： 7.4.29
 
@@ -89,18 +89,18 @@ CREATE TABLE `orders` (
 --
 
 INSERT INTO `orders` (`orderid`, `username`, `total`, `date`, `order_status`, `name`, `phone`, `position`) VALUES
-(15, 'sjx', 114.00, '2022-06-17 16:40:02', 'PARTIAL', '司建新', '15212909128', '榆中校区28号楼'),
-(16, 'sjx', 114.00, '2022-06-17 16:40:31', 'PARTIAL', '司建新', '15212909128', '榆中校区28号楼'),
-(17, 'sjx', 114.00, '2022-06-17 16:41:47', 'PARTIAL', '司建新', '15212909128', '榆中校区28号楼'),
-(18, 'sjx', 114.00, '2022-06-17 16:46:37', 'PARTIAL', '司建新', '15212909128', '榆中校区28号楼'),
-(19, 'sjx', 19.00, '2022-06-17 16:53:06', 'PARTIAL', '司建新', '15212909128', '榆中校区28号楼'),
-(20, 'myuser', 12.00, '2022-06-24 03:22:35', 'PARTIAL', '司建新', '15212909128', 'LanZhou'),
-(21, 'myuser', 12.00, '2022-06-24 03:23:26', 'PARTIAL', '司建新', '15212909128', 'LanZhou'),
-(22, 'myuser', 12.00, '2022-06-24 03:23:51', 'PARTIAL', '司建新', '15212909128', 'LanZhou'),
-(23, 'myuser', 12.00, '2022-06-24 03:23:53', 'PARTIAL', '司建新', '15212909128', 'LanZhou'),
-(24, 'myuser', 12.00, '2022-06-24 03:25:38', 'PARTIAL', '司建新', '15212909128', 'LanZhou'),
-(25, 'myuser', 12.00, '2022-06-24 03:26:24', 'PARTIAL', '司建新', '15212909128', 'LanZhou'),
-(26, 'sjx', 31.00, '2022-06-24 06:15:00', 'PARTIAL', '司建新', '15212909128', '榆中校区28号楼');
+(15, 'sjx', 114.00, '2022-06-17 16:40:02', 'PARTIAL', 'name', '0000', 'position'),
+(16, 'sjx', 114.00, '2022-06-17 16:40:31', 'PARTIAL', 'name', '0000', 'position'),
+(17, 'sjx', 114.00, '2022-06-17 16:41:47', 'PARTIAL', 'name', '0000', 'position'),
+(18, 'sjx', 114.00, '2022-06-17 16:46:37', 'PARTIAL', 'name', '0000', 'position'),
+(19, 'sjx', 19.00, '2022-06-17 16:53:06', 'PARTIAL', 'name', '0000', 'position'),
+(20, 'myuser', 12.00, '2022-06-24 03:22:35', 'PARTIAL', 'name', '0000', 'position'),
+(21, 'myuser', 12.00, '2022-06-24 03:23:26', 'PARTIAL', 'name', '0000', 'position'),
+(22, 'myuser', 12.00, '2022-06-24 03:23:51', 'PARTIAL', 'name', '0000', 'position'),
+(23, 'myuser', 12.00, '2022-06-24 03:23:53', 'PARTIAL', 'name', '0000', 'position'),
+(24, 'myuser', 12.00, '2022-06-24 03:25:38', 'PARTIAL', 'name', '0000', 'position'),
+(25, 'myuser', 12.00, '2022-06-24 03:26:24', 'PARTIAL', 'name', '0000', 'position'),
+(26, 'sjx', 31.00, '2022-06-24 06:15:00', 'PARTIAL', 'name', '0000', 'position');
 
 -- --------------------------------------------------------
 
@@ -164,15 +164,10 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`username`, `password`, `email`, `type`, `name`, `sex`, `age`, `phone`, `qq`, `default_pos`, `description`) VALUES
-('sjx', '7c4a8d09ca3762af61e59520943dc26494f8941b', 'sijianxin01@163.com', 1, '司建新', 0, 0, '15212909128', '0', '榆中校区28号楼', ''),
-('shop', '7c4a8d09ca3762af61e59520943dc26494f8941b', 'sijianxin01@163.com', 2, 'Jianxin Si', 0, 0, '15212909128', '0', 'LanZhou', 'shop'),
-('320190941781', '7c4a8d09ca3762af61e59520943dc26494f8941b', 'sijianxin01@163.com', 1, '司建新', 0, 21, '15212909128', '2010775381', '兰州', ''),
-('sjxshop', '7c4a8d09ca3762af61e59520943dc26494f8941b', 'sijianxin01@163.com', 2, 'Jianxin Si', 0, 21, '15212909128', '2010775381', 'LanZhou', '这是一个有趣的店铺'),
-('admin', '7c4a8d09ca3762af61e59520943dc26494f8941b', 'sijianxin01@163.com', 3, '', 0, 0, '', '', '', ''),
-('myadmin', '7c4a8d09ca3762af61e59520943dc26494f8941b', 'sijianxin01@163.com', 3, '', 0, 0, '', '', '', ''),
-('司建新的小店', '7c4a8d09ca3762af61e59520943dc26494f8941b', 'sijianxin01@163.com', 2, 'Jianxin Si', 0, 21, '15212909128', '2010775381', 'LanZhou', '司建新的小店，菜品多样又美味。'),
-('myshop', '7c4a8d09ca3762af61e59520943dc26494f8941b', 'sijianxin01@163.com', 2, 'Jianxin Si', 0, 21, '15212909128', '2010775381', 'LanZhou', '我的店铺，美味又放心。'),
-('myuser', '7c4a8d09ca3762af61e59520943dc26494f8941b', 'sijianxin01@163.com', 1, '司建新', 0, 21, '15212909128', '2010775381', 'LanZhou', '');
+('sjx', '7c4a8d09ca3762af61e59520943dc26494f8941b', 'sijianxin01@163.com', 1, 'sjx', 0, 0, '0000', '0000', 'position', 'description'),
+('shop', '7c4a8d09ca3762af61e59520943dc26494f8941b', 'sijianxin01@163.com', 2, 'shop', 0, 0, '0000', '0000', 'position', 'description'),
+('myshop', '7c4a8d09ca3762af61e59520943dc26494f8941b', 'sijianxin01@163.com', 2, 'myshop', 0, 21, '0000', '0000', 'position', 'description'),
+('myuser', '7c4a8d09ca3762af61e59520943dc26494f8941b', 'sijianxin01@163.com', 1, 'myuser', 0, 21, '0000', '0000', 'position', 'description');
 
 --
 -- 转储表的索引
