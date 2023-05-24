@@ -74,6 +74,7 @@ function insert_order($order_details) {
   $date = date("Y-m-d H:i:s");
 
   $query = "insert into orders values
+            //可能会报错，可以第一个插入的值改为 '0'
             ('', '".$conn->real_escape_string($_SESSION['valid_user'])."', '". $conn->real_escape_string($_SESSION['total_price']) .
              "', '". $conn->real_escape_string($date) ."', 'PARTIAL',
              '" . $conn->real_escape_string($name) . "', '" . $conn->real_escape_string($phone) .
