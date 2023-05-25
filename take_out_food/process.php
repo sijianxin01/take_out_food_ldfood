@@ -17,9 +17,11 @@
 
     if(process_card($_POST)) {//支付
       //empty shopping cart
-      session_destroy();//会话结束
+	  unset($_SESSION['items']);
+	  unset($_SESSION['total_price']);
+	  unset($_SESSION['cart']);
       echo "<p>你的订单已经完成，谢谢惠顾，欢迎再次下单。</p>";
-      display_button("index.php", "cart", "Continue Shopping");//跳转按钮
+      display_button("user_main.php", "cart", "Continue Shopping");//跳转按钮
     } else {
       echo "<p>无法完成支付，请重试。</p>";
       display_button("purchase.php", "last", "Back");//跳转按钮

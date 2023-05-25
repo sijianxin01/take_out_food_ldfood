@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- 主机： 127.0.0.1
--- 生成日期： 2023-05-04 10:44:14
+-- 生成日期： 2023-05-25 10:49:31
 -- 服务器版本： 10.4.24-MariaDB
 -- PHP 版本： 7.4.29
 
@@ -167,7 +167,8 @@ INSERT INTO `user` (`username`, `password`, `email`, `type`, `name`, `sex`, `age
 ('sjx', '7c4a8d09ca3762af61e59520943dc26494f8941b', 'sijianxin01@163.com', 1, 'sjx', 0, 0, '0000', '0000', 'position', 'description'),
 ('shop', '7c4a8d09ca3762af61e59520943dc26494f8941b', 'sijianxin01@163.com', 2, 'shop', 0, 0, '0000', '0000', 'position', 'description'),
 ('myshop', '7c4a8d09ca3762af61e59520943dc26494f8941b', 'sijianxin01@163.com', 2, 'myshop', 0, 21, '0000', '0000', 'position', 'description'),
-('myuser', '7c4a8d09ca3762af61e59520943dc26494f8941b', 'sijianxin01@163.com', 1, 'myuser', 0, 21, '0000', '0000', 'position', 'description');
+('myuser', '7c4a8d09ca3762af61e59520943dc26494f8941b', 'sijianxin01@163.com', 1, 'myuser', 0, 21, '0000', '0000', 'position', 'description'),
+('admin', '7c4a8d09ca3762af61e59520943dc26494f8941b', '\'\'', 3, '\'\'', 1, 1, '\'\'', '\'\'', '\'\'', '\'\'');
 
 --
 -- 转储表的索引

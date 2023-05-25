@@ -73,8 +73,8 @@ function insert_order($order_details) {
 
   $date = date("Y-m-d H:i:s");
 
-  $query = "insert into orders values
-            ('', '".$conn->real_escape_string($_SESSION['valid_user'])."', '". $conn->real_escape_string($_SESSION['total_price']) .
+  $query = "insert into orders(`username`, `total`, `date`, `order_status`, `name`, `phone`, `position`) values
+            ('".$conn->real_escape_string($_SESSION['valid_user'])."', '". $conn->real_escape_string($_SESSION['total_price']) .
              "', '". $conn->real_escape_string($date) ."', 'PARTIAL',
              '" . $conn->real_escape_string($name) . "', '" . $conn->real_escape_string($phone) .
              "', '". $conn->real_escape_string($pos)."')";
